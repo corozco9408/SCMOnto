@@ -1,0 +1,548 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#"
+     xml:base="http://www.semanticweb.org/sebastianv/ontologies/OnPGC"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC">
+        <rdfs:comment>OnPGC presenta una ontología de gestión de la configuración de software en el ámbito de la gestión de proyectos.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Almacena -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Almacena">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Repositorio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Versión"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Almacenada_en -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Almacenada_en">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Contabilidad_de_estado_de_configuración"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Base_de_datos_de_gestión_de_la_configuración"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Almacenado_en -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Almacenado_en">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Lanzamiento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Repositorio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Basada_en -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Basada_en">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Auditoría"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Evaluación_objetiva"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Clasifica -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Clasifica">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Identificación_de_la_configuración"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Elemento_software"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Controla -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Controla">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Control_de_la_configuración"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Ítem_de_configuración"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Define -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Define">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Gestión_de_la_configuración"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Autoridad_de_gestión_de_la_configuración"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Define2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Define2">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Gestión_de_la_configuración"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Plan_de_lanzamiento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Es_almacenada_en -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Es_almacenada_en">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Auditoría"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Base_de_datos_de_gestión_de_la_configuración"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Es_responsable_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Es_responsable_de">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Autoridad_de_gestión_de_la_configuración"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Proceso"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Establece -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Establece">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Gestión_de_la_configuración"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Línea_base"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Establece2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Establece2">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Gestión_de_la_configuración"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Control_de_la_configuración"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Establece3 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Establece3">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Gestión_de_la_configuración"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Identificación_de_la_configuración"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Establece4 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Establece4">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Gestión_de_la_configuración"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Contabilidad_de_estado_de_configuración"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Evalúa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Evalúa">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Comisión_de_control_de_la_configuración"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Petición_de_cambio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Genera -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Genera">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Plan_de_lanzamiento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Lanzamiento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Genera2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Genera2">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Proceso"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Producto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Gestiona -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Gestiona">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Gestión_de_entrega_de_software"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Producto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Identifica -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Identifica">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Identificación_de_la_configuración"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Ítem_de_configuración"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Incluye -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Incluye">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Gestión_de_la_configuración"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Auditoría"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Lleva_a_cabo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Lleva_a_cabo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Técnico_de_configuración"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Petición_de_cambio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Planea -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Planea">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Plan_de_lanzamiento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Gestión_de_entrega_de_software"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Puede_ser -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Puede_ser">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Línea_base"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Proceso"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Se_realiza_sobre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Se_realiza_sobre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Petición_de_cambio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Ítem_de_configuración"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Solicita -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Solicita">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Petición_de_cambio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Soluciona -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Soluciona">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Producto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Requerimiento_de_cliente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Nombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Auditoría"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Auditoría_de_configuración"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Auditoría_de_configuración_funcional"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Auditoría_de_configuración_física"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Autoridad_de_gestión_de_la_configuración"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Base_de_datos_de_gestión_de_la_configuración"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Categoría_de_proceso"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Comisión_de_control_de_la_configuración"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Construcción"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Contabilidad_de_estado_de_configuración"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Control_de_la_configuración"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Elemento_software"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Evaluación_objetiva"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Gestión_de_entrega_de_software"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Gestión_de_la_configuración"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Identificación_de_la_configuración"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Lanzamiento"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Línea_base"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Modelo_de_calidad"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Persona"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Petición_de_cambio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Plan_de_lanzamiento"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Proceso"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Producto"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Repositorio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Requerimiento_de_cliente"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Técnico_de_configuración"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Versión"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Ítem_de_configuración"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Ítem_de_configuración_constituyente"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Línea_de_producto/servicio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Auditoría -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Auditoría"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Auditoría_de_configuración -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Auditoría_de_configuración">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Auditoría"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Auditoría_de_configuración_funcional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Auditoría_de_configuración_funcional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Auditoría_de_configuración"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Auditoría_de_configuración_física"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Auditoría_de_configuración_física -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Auditoría_de_configuración_física">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Auditoría_de_configuración"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Autoridad_de_gestión_de_la_configuración -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Autoridad_de_gestión_de_la_configuración">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Base_de_datos_de_gestión_de_la_configuración -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Base_de_datos_de_gestión_de_la_configuración">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Repositorio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Categoría_de_proceso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Categoría_de_proceso"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Comisión_de_control_de_la_configuración -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Comisión_de_control_de_la_configuración">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Construcción -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Construcción"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Contabilidad_de_estado_de_configuración -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Contabilidad_de_estado_de_configuración"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Control_de_la_configuración -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Control_de_la_configuración"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Elemento_software -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Elemento_software">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Producto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Evaluación_objetiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Evaluación_objetiva"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Gestión_de_entrega_de_software -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Gestión_de_entrega_de_software"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Gestión_de_la_configuración -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Gestión_de_la_configuración"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Identificación_de_la_configuración -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Identificación_de_la_configuración"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Lanzamiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Lanzamiento"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Línea_base -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Línea_base">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Ítem_de_configuración"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Modelo_de_calidad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Modelo_de_calidad"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Persona"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Petición_de_cambio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Petición_de_cambio"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Plan_de_lanzamiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Plan_de_lanzamiento"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Proceso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Proceso"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Producto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Producto"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Repositorio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Repositorio"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Requerimiento_de_cliente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Requerimiento_de_cliente"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Técnico_de_configuración -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Técnico_de_configuración">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Versión -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Versión"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Ítem_de_configuración -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Ítem_de_configuración"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Ítem_de_configuración_constituyente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Ítem_de_configuración_constituyente"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Línea_de_producto/servicio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Línea_de_producto/servicio"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Com1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Com1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sebastianv/ontologies/OnPGC#Comisión_de_control_de_la_configuración"/>
+        <Nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Juan</Nombre>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
